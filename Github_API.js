@@ -5,7 +5,7 @@ var github = new GitHubApi({
 
 github.authenticate({
   type: 'oauth',
-  token: '32f8a25366b81dd3a982a1e819cc3ca1361489d0'
+  token: 'X'
 })
 
 github.users.getFollowingForUser({
@@ -13,15 +13,19 @@ github.users.getFollowingForUser({
 }, function (err, res) {
   if (err) throw err
   var keys = Object.keys(res.data);
-  console.log("Following:")
+  console.log("\nFollowing:")
   for (x=0; x<res.data.length; x++){
     console.log(res.data[x].login)
   }
 })
 
-/*github.users.getFollowersForUser({
+github.users.getFollowersForUser({
   username: 'paul5hc'
 }, function (err, res) {
   if (err) throw err
-  //console.log(res)
-})*/
+  var keys = Object.keys(res.data);
+  console.log("\nFollowers:")
+  for (x=0; x<res.data.length; x++){
+    console.log(res.data[x].login)
+  }
+})
