@@ -43,3 +43,13 @@ github.repos.getAll({
   }
   console.log("Number of Repositories: " + (res.data.length))
 })
+
+github.repos.getCommits({
+  owner: 'paul5hc',
+  repo: 'Github_API'
+}, function (err, res) {
+    if (err) throw err
+    for (x=0; x<res.data.length; x++){
+      console.log(res.data[x].commit.message)
+    }
+})
