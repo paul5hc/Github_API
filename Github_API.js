@@ -1,3 +1,7 @@
+// Author: Paul Byrne
+// Student Number: 15317444
+// Date: 14/12/2017
+
 var GitHubApi = require('github')
 var github = new GitHubApi({
   debug: true
