@@ -13,4 +13,4 @@ The output should include:
 - A list of the following for the user.
 - A list of the repositories for the user including their size and language.
 - A list of the commits that have been made to the LowestCommonAncestor repository.
-- <b> Samples of this output has been provided in Sample_Photo1 and Sample_Photo2. </b>
+- <b> Samples of this output have been provided in Sample_Photo1 and Sample_Photo2. </b>
